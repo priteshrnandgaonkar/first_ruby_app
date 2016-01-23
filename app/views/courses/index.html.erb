@@ -1,0 +1,16 @@
+<h1>Searching for - <%= @search_term %></h1>
+<table border = "1">
+	<tr>
+		<th> Image </th>
+		<th> Name </th>
+		<th> Description </th>
+	</tr>
+	<% @searches.each do |course| %>
+	<tr>
+		<td> <%= image_tag(course["smallIcon"]) %> </th>
+		<td> <%= course["name"] %>  </th>
+		<td> <%= course["shortDescription"] %> </th>
+	</tr>
+	<% end %>
+</table>
+

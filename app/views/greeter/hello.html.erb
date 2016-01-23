@@ -1,0 +1,5 @@
+<% random_names = ["Alex", "Joe", "Michael"] %>
+<h1>Greetings <%=  random_names.sample %></h1>
+<p> Time is <%= Time.now %></p>
+<p> <%= link_to("Google", "https://www.google.com") %> </p>
+<p> <%= link_to("Goodbye", greeter_goodbye_url) %> </p>
