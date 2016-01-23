@@ -1,3 +1,4 @@
+require 'httparty'
 class Coursera
 	include HTTParty
 	base_uri  "https://api.coursera.org/api/catalog.v1/courses"
